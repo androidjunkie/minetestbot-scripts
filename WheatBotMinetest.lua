@@ -19,7 +19,7 @@ elseif (read_node.forward() == ripe) then
 elseif (read_node.forward_down() == "farming:soil_wet") then
   place.forward(seed)
   move.forward();
-elseif (read_node.forward_down == "farming:soil_wet") then
+elseif (read_node.forward_down() == "farming:soil_wet") then
   move.forward();
 elseif (dir==1) then
   turn.left()
@@ -46,7 +46,7 @@ elseif (dir==3) then
     elseif (read_node.forward_down() == "farming:soil_wet") then
         place.forward(seed)
         move.forward();
-    elseif (read_node.forward_down == "farming:soil_wet") then
+    elseif (read_node.forward_down() == "farming:soil_wet") then
         move.forward();
     end
   turn.right()
